@@ -1,0 +1,10 @@
+.menu > li {
+    border: 1px solid tomato;
+  }
+  /* Почему эта хрень делает ВСЕ элементы синими. ЭТО ЖЕ CHILD */
+  .menu li {
+    color: blue;
+  }
+   /* li {
+    border: 1px solid tomato;
+  } */
