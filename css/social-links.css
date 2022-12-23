@@ -1,0 +1,31 @@
+/* .social-links .link {
+    color: blue;
+}
+.social-links .link:hover {
+    color: green;
+    font-weight: 900;
+    font-size: large;
+}
+
+.social-links .link:focus { 
+    color: red;
+    font-weight: 900;
+    font-size: x-large;
+} */
+
+.social-links .link {
+    color: teal;
+  }
+  
+  .social-links .link:hover,
+  .social-links .link:focus {
+    color: orange;
+  }
+  
+  .social-links .link:active {
+    color: red;
+  }
+  
+  .social-links .link:visited {
+    color: green;
+  }

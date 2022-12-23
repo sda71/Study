@@ -1,0 +1,26 @@
+body {
+    font-family: 'Times New Roman';
+    font-size: 30;
+}
+table caption {
+    /* text-align: left; */
+    font-size: 40;
+    font-weight: bold;
+}
+/* We "collapse" the frames of adjacent cells */
+.schedule {
+    border-collapse: collapse ;
+}
+/* 
+  Add a border and padding to the cells, the distance from the content to the border.
+  To control the vertical position, the caption-side property is used.
+*/
+.schedule th, .schedule td {
+    padding: 10px;
+    border: 1px solid black
+    
+}
+.schedule-body > tr:hover {
+    background-color: tomato;
+    color: white;
+}
