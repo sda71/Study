@@ -1,0 +1,22 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu > .menu-item {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1;
+  }
+  
+  .sub-menu .menu-link{
+    opacity: 0;
+    margin-left: 100px;
+  }
+
+  
+  .menu-item:hover .menu-link{
+    opacity: 1;
+  } 
+  
+  

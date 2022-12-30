@@ -1,0 +1,9 @@
+ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    vertical-align: top;
+  }
