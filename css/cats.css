@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-size: 16px;
+  background-color: grey;
+  color: #000000;
+}
+
+.pane {
+  display: none;
+  padding: 8px;
+  border: 6px solid tomato;
+}
+
+.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+}
+.controls a {
+  padding: 4px 8px;
+}

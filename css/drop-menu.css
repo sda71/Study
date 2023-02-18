@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.link {
+  text-decoration: none;
+}
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  background-color: teal;
+  color: #fff;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 15px;
+  outline: 2px solid tomato;
+}
+.menu-item:hover .sub-menu-list {
+  display: block;
+  opacity: 100%;
+}
+
+.sub-menu-list {
+  position: absolute;
+  margin: 0;
+  padding: 10px;
+  top: 100%;
+  width: 100%;
+
+  /* width: 100%; */
+  background-color: #ccc;
+  /* display: none; */
+  opacity: 0;
+}

@@ -1,0 +1,42 @@
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: gray;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 480px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 2px dashed tomato;
+}
+.header,
+.footer,
+.hero,
+.about,
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.header {
+  background-color: maroon;
+}
+.footer {
+  background-color: green;
+}
+.hero {
+  background-color: blue;
+}
+.about {
+  background-color: yellow;
+}
+.description {
+  background-color: maroon;
+}
