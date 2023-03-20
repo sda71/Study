@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.form {
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  font-weight: 600;
+  color: rgb(14, 93, 163);
+  margin-bottom: 8px;
+}
+.form-input {
+  width: 60px;
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+}
+.form-input:in-range {
+  border: 1px solid rgb(4, 245, 56);
+}
+.form-input:out-of-range {
+  border: 1px solid red;
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/css/label.css" />
   </head>
   <body>
     <form class="form">
@@ -94,15 +95,146 @@
 
     <p>Selected value: <span class="js-selected-value">40</span></p>
 
-    <div class="menu">
-      <label for="size">Size</label>
-      <select name="size" id="size">
+    <label for="size">Size</label>
+    <select name="size" id="size">
+      <optgroup label="1">
         <option value="xl">Extra Large</option>
         <option value="l">Large</option>
         <option value="s">Small</option>
         <option value="xs">Extra Small</option>
-      </select>
-    </div>
+      </optgroup>
+      <optgroup label="2">
+        <option value="xl">Extra Large</option>
+        <option value="l" selected>Large</option>
+        <option value="s">Small</option>
+        <option value="xs">Extra Small</option>
+      </optgroup>
+    </select>
+
+    <label for="fav"><p>Choose your favorit fruit</p></label>
+    <input list="fruit" name="fav" id="fav" />
+    <datalist id="fruit">
+      <option value="K">Kiwi</option>
+      <option value="B">Banan</option>
+      <option value="O">Orange</option>
+      <option value="A">Apple</option>
+      <option value="L">Lemon</option>
+      <option value="GF">Grapefruit</option>
+      <option value="L">Lime</option>
+      <option value="G">Grape</option>
+      <option value="C">Cherry</option>
+    </datalist>
+
+    <form>
+      <fieldset>
+        <legend>Enter your contact details</legend>
+        <label>
+          Name
+          <input type="text" name="username" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Your favorite programming language</legend>
+        <label for=""
+          ><input type="checkbox" name="language" value="js" />Java
+          Script</label
+        ><label for=""
+          ><input type="checkbox" name="language" value="pyton" />Pyton</label
+        ><label for=""
+          ><input type="checkbox" name="language" value="java" />Java</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>I want to receive</legend>
+        <label>
+          <input type="checkbox" name="newsletter" value="weekly" />
+          The weekly newsletter
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="company_offers" />
+          Offers from the company
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="associated_offers" />
+          Offers from associated companies
+        </label>
+      </fieldset>
+
+      <button type="submit">Subscribe</button>
+    </form>
+
+    <form class="form">
+      <div
+        class="form-group"
+        role="group"
+        aria-labelledby="contact-details-head"
+      >
+        <p id="contact-details-head">Enter your contact details</p>
+        <label>
+          Name
+          <input
+            type="text"
+            name="username"
+            required
+            pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+            title="Username must be two words separated by space."
+          />
+        </label>
+        <label>
+          Password
+          <input
+            type="password"
+            name="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Please
+          include at least 1 uppercase character, 1 lowercase character, and 1
+          number."
+          />
+        </label>
+      </div>
+
+      <div
+        class="form-group"
+        role="group"
+        aria-labelledby="contact-details-head"
+      >
+        <p id="contact-details-head">Your favorite programming language</p>
+        <label for=""
+          ><input type="checkbox" name="language" value="js" />Java
+          Script</label
+        ><label for=""
+          ><input type="checkbox" name="language" value="pyton" />Pyton</label
+        ><label for=""
+          ><input type="checkbox" name="language" value="java" />Java</label
+        >
+      </div>
+
+      <div
+        class="form-group"
+        role="group"
+        aria-labelledby="contact-details-head"
+      >
+        <p id="contact-details-head">I want to receive</p>
+        <label>
+          <input type="checkbox" name="newsletter" value="weekly" />
+          The weekly newsletter
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="company_offers" />
+          Offers from the company
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="associated_offers" />
+          Offers from associated companies
+        </label>
+      </div>
+
+      <button type="submit">Subscribe</button>
+    </form>
 
     <script src="/js/range.js"></script>
   </body>

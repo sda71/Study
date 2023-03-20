@@ -2,26 +2,42 @@ body {
   font-family: sans-serif;
   line-height: 1.5;
 }
-
+/* 
 input {
   padding: 8px;
   font-family: inherit;
-}
+} */
 
-label {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* margin-bottom: 8px; */
-}
-label {
+/* label {
   display: block;
   margin-bottom: 4px;
-}
+} */
 
 /* .menu {
   display: flex;
   flex-direction: column;
 } */
 
-.form {
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px #000;
+}
+.form-group p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+* label {
+  /* display: block; */
+  margin-bottom: 4px;
+}
+
+button {
+  box-shadow: 3px 3px 3px #000;
 }
